@@ -6,7 +6,7 @@ Django ORM 을 이용해서 SQL을 작성하면 많은 데이터를 검색하거
 이에 도전해보려는 것은 쿼리 최적화 이다.
 
 아래는 첨부한 2개의 모델이다.
-
+```python
 # models.py
 
 class Category(models.Model):
@@ -47,6 +47,6 @@ class Post(models.Model):
         
     def __str__(self):
         return self.title
- 
+``` 
 
 위 문제를 해결하기위해서 '쿼리 최적화'라는 성능에 아주 큰 영향을 미치는 높은 산을 마주했다.. 이걸 넘을 차례다
